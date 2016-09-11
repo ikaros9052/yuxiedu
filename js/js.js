@@ -1,0 +1,16 @@
+$(function(){
+	$(".btn").click(function(){
+		if($(".main").css("left")=="0px"){
+			$(".main").animate({"left":"-3rem"});
+		}else{
+			$(".main").animate({"left":"0px"});
+		}
+	})
+	$(".slide-nav").click(function(){
+		if($(".main").css("left")=="0px"){
+			$(".main").css("left","-3rem");
+		}else{
+			$(".main").css("left","0");
+		}
+	})
+})
